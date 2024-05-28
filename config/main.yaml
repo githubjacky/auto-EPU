@@ -1,0 +1,47 @@
+hydra:
+    output_subdir: null
+    run:
+      dir: .
+
+
+defaults:
+    - model: openai
+    - _self_
+
+
+keyword:
+  task: definition
+  # task: simple
+
+
+  # this parameter should be set if it's "simple" task
+  cate: economic
+  # cate: policy
+  # cate: uncertanty
+
+  # role: economist
+  # role: Minister of Economic Affairs
+  # role: Central Bank Governor
+  role: newspaper editor
+
+  n_items: 20
+
+  # below are some language(country) specfic parameter
+  # nationality: an American
+  # nationality: a Chinese
+  # nationality: a South Korean
+  # nationality: a Japanese
+  nationality: a Taiwanese
+
+
+prompt:
+  system_message_template_path:
+  human_message_template_path:
+  fewshot_news_path:
+  fewshot_reasons_path:
+
+
+data:
+  raw: data/raw/
+  processed: data/processed/
+  predict: data/predict/

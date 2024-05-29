@@ -2,15 +2,21 @@ denoise:
   country: Taiwan
   strategy: with_cot
   # strategy: without_cot
-  model: gpt-4-1106-preview
+
+  # parameters for OpenAILLM
+  model: gpt-3.5-turbo-1106
   temperature: 0.
   timeout: 120
   verbose: False
+
+  # set experiment and run for MLflow tracking
   experiment_name: auto-EPU
   run_name: with_cot_fewshot6
-  query_file_path: data/test_10.jsonl
 
+  # file for LLM to label documents
+  query_file_path: test.jsonl
 
+# TODO:
 fine_tune:
   input_dir: data/raw
   output_dir: data/processed/fine_tune

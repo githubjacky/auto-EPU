@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "instructions",
+        "news",
+        "output_instructions"
+    ],
+    "input_types": {},
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "{instructions}\nQuestion: Which label should the below news article be classified as? 1 or 0?\n\n{news}\n\nOutput Instructions:\n{output_instructions}\nBesides, don't forget to escape a single quote in the reason section.\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

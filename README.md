@@ -12,11 +12,11 @@ poetry install
 # Keyword Recommendation
 To check the prompt for either definition or simple task, you can browse the configuration file `config/main.yaml`, modify some parameters and run the command:
 ```sh
-poetry run python auto-EPU/keyword.py
+poetry run python auto_EPU/keyword.py
 ```
 Or configure it directly in CLI through the functionality of the package [hydra](https://github.com/facebookresearch/hydra).
 ```sh
-poetry run python auto-EPU/keyword.py keyword.role=economist
+poetry run python auto_EPU/keyword.py keyword.role=economist
 ```
 
 # Denoise
@@ -25,11 +25,16 @@ We utilize the package [llm-research](https://github.com/githubjacky/llm-researc
 2. modify the configuration file `config/model/openai.yaml`
 3. run the command:
 ```sh
-poetry run python auto-EPU/denoise.py
+poetry run python auto_EPU/denoise.py
 ```
 4. check out the MLflow ui
 ```sh
 poetry run mlflow ui
 ```
 
-Notice that we haven't pubished our dataset yet, but you can use your own dataset!
+## Fine-tuning
+1. modify the configuration `config/model/openai.yaml`
+2. run the command
+```sh
+poetry run python auto_EPU/finetune_format.py
+```

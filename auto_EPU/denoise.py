@@ -1,7 +1,8 @@
 import hydra
+import logging
 from langchain.prompts import PromptTemplate
 from langchain_core.pydantic_v1 import BaseModel, Field
-from llm_research.model import Prompt, OpenAILLM
+from llm_research import Prompt, OpenAILLM
 import mlflow
 import matplotlib.pyplot as plt
 from omegaconf import DictConfig
@@ -138,7 +139,7 @@ def predict(cfg: DictConfig):
     )
     preds = [
         i['pred']
-        for i in read_jsonl(f'data/model_results/{cfg.model.denoise.experiment_name}/{cfg.model.denoise.run_name}.jsonl')
+        for i in read_jsonl(f'data/request_results/{cfg.model.denoise.experiment_name}/{cfg.model.denoise.run_name}.jsonl')
     ]
     labels = [
         i['label']
@@ -149,4 +150,5 @@ def predict(cfg: DictConfig):
 
 
 if __name__ == "__main__":
+    logging.getLogger('httpx').setLevel(logging.WARNING)
     predict()

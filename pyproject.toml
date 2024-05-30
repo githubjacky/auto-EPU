@@ -33,7 +33,7 @@ tiktoken = "<0.6.0"
 seaborn = "^0.13.2"
 plotly = "^5.20.0"
 pyzmq = "26.0.3"
-llm-research = "^0.1.0"
+llm-research = "0.2.0"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -2869,13 +2869,13 @@ test = ["coverage", "pytest", "pytest-cov"]
 
 [[package]]
 name = "llm-research"
-version = "0.1.0"
+version = "0.2.0"
 description = "A minimum Python package built on top of the LangChain framework to interact with LLM."
 optional = false
-python-versions = ">=3.11,<4.0"
+python-versions = "<4.0,>=3.11"
 files = [
-    {file = "llm_research-0.1.0-py3-none-any.whl", hash = "sha256:2725676471b0a27143c263992c1ff26376d7ca1cdb3d3c0bb84689ca7dd439bf"},
-    {file = "llm_research-0.1.0.tar.gz", hash = "sha256:83f28de33a5a08ee41ece8183a368fe482ca10be451b6c4320a2ff446f24464e"},
+    {file = "llm_research-0.2.0-py3-none-any.whl", hash = "sha256:736dbc9c28e939bbf767d9600de29764c159e22691c22e0503f551702cc2948c"},
+    {file = "llm_research-0.2.0.tar.gz", hash = "sha256:98513b7a4079a41ac0baff81b88ce413b667462ca18079695ecef5635b2784f3"},
 ]
 
 [package.dependencies]
@@ -7272,4 +7272,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "08ca35618f845a2332ed4cc54374dedbd6eb1ec14d7e3e9372d00041a23a9e09"
+content-hash = "a40c5b6e63d33e158a717035c8d2c85eacc4e29a81f7c5d21ad339837bf85615"

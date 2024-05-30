@@ -34,7 +34,8 @@ poetry run mlflow ui
 
 ## Fine-tuning
 1. modify the configuration `config/model/openai.yaml`
-2. run the command
+2. run the command to prepare the training dataset for OpenAI Fine-tuning API
 ```sh
 poetry run python auto_EPU/finetune_format.py
 ```
+3. Head to the OpenAI platform to create a new fine-tuning job

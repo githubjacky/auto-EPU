@@ -22,6 +22,7 @@ report/meetings/**/*.log
 report/progress_report/**/*.log
 report/paper/**/*.log
 keyword.log
+data/keywords
 
 
 # Byte-compiled / optimized / DLL files

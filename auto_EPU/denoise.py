@@ -134,7 +134,7 @@ def predict(cfg: DictConfig):
     )
     model.request_batch(
         prompt,
-        cfg.model.denoise.query_file_path,
+        cfg.model.denoise.request_file_path,
         f'data/denoise_prompt/fewshot_examples/{fewshot_examples_file}'
     )
     preds = [
@@ -143,7 +143,7 @@ def predict(cfg: DictConfig):
     ]
     labels = [
         i['label']
-        for i in read_jsonl(cfg.model.denoise.query_file_path)
+        for i in read_jsonl(cfg.model.denoise.request_file_path)
     ]
     log_predict(preds, labels)
     model.end_request()

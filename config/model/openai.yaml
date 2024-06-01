@@ -14,11 +14,11 @@ denoise:
   run_name: with_cot_fewshot6
 
   # file for LLM to label documents
-  query_file_path: test.jsonl
+  request_file_path: data/test.jsonl
 
-# TODO:
+
 finetune:
   strategy: with_cot
   # strategy: without_cot
 
-  fpath_train: test.jsonl
+  fpath_train: data/test.jsonl

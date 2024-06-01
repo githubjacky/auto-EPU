@@ -1,6 +1,6 @@
 ## Automation of Text-Based Economic Indicator Construction: </br> A Case Study on the Economic Policy Uncertainty Index
 
-The repo aims to faciliate the process of reproducing the results in this paper. For more details, please check out our paper!
+This repo aims to faciliate the process of reproducing results in this paper. For more details, please check out our paper!
 
 ## Environment
 This is a [poetry](https://github.com/python-poetry/poetry) project so you can set up the enviroment through the command:
@@ -20,7 +20,7 @@ poetry run python auto_EPU/keyword.py keyword.role=economist
 ```
 
 ## Denoise
-We utilize the package [llm-research](https://github.com/githubjacky/llm-research/tree/main) built on top of the LangChain framework to interact with OpenAI API. The llm-research package will log predictions using [MLflow](https://github.com/mlflow/mlflow). We choose this package because it provide a easy-to-use API to generate structured outputs and adopt few-shot prompting strategy. We' ve inspected the implementation carefully. Notice that you can use your own dataset to follow instructions below.
+We utilize the package [llm-research](https://github.com/githubjacky/llm-research/tree/main) built on top of the LangChain framework to interact with OpenAI API. The llm-research package will log predictions using [MLflow](https://github.com/mlflow/mlflow). We choose this package because it provides a easy-to-use API to generate structured outputs and adopt few-shot prompting strategy. Notice that we' ve inspected the implementation carefully and you can use your own dataset to follow instructions below.
 1. add your OpenAI API key in the file .env.example and reanme it as .env
 2. modify the configuration file `config/model/openai.yaml`
 3. run the command:
@@ -42,4 +42,4 @@ poetry run python auto_EPU/finetune_format.py
 
 
 ## Tables And Figures
-Please check out the directory `notebooks`. For Table 3, we directly utilize the MLflow tracking service supported by llm-research package to record the metrics. We use the model `gpt-3.5-turbo-1106` with 0 temperature to perform the denoise task. The number of few-shot examples is 6. Moreover, we utilize 1000 training examples to fine-tuned on `gpt-3.5-turbo-1106` with default parameters of the OpenAI's Fine-tuning API.
+Please check out the directory `notebooks`. For Table 3, we directly utilize the MLflow tracking service supported by llm-research package to record the metrics. We use the model `gpt-3.5-turbo-1106` with 0 temperature to perform denoise task. The number of few-shot examples is 6. Moreover, we leverage 1000 training examples fine-tuning on `gpt-3.5-turbo-1106` with default parameters of OpenAI's Fine-tuning API.

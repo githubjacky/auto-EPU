@@ -1,6 +1,12 @@
 ## Automation of Text-Based Economic Indicator Construction: </br> A Pilot Exploration on Economic Policy Uncertainty Index
 
-This repo aims to faciliate the process of reproducing results in this paper. For more details, please check out our paper!
+
+This repo aims to faciliate the process of reproducing results in this paper. For more details, please check out our [paper](https://github.com/githubjacky/auto-EPU/blob/main/CIKM_2024_paper_3165.pdf)!
+
+
+## News
+Our work has been accepted at CIKM 2024 for the Short Research Paper track.
+
 
 ## Environment
 This is a [poetry](https://github.com/python-poetry/poetry) project so you can set up the enviroment through the command:

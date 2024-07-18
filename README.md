@@ -1,4 +1,4 @@
-## Automation of Text-Based Economic Indicator Construction: </br> A Case Study on the Economic Policy Uncertainty Index
+## Automation of Text-Based Economic Indicator Construction: </br> A Pilot Exploration on Economic Policy Uncertainty Index
 
 This repo aims to faciliate the process of reproducing results in this paper. For more details, please check out our paper!
 

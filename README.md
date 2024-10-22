@@ -1,7 +1,7 @@
 ## Automation of Text-Based Economic Indicator Construction: </br> A Pilot Exploration on Economic Policy Uncertainty Index
 
 
-This repo aims to facilitate reproducing tables in this paper. You can find the poster [here](https://github.com/githubjacky/auto-EPU/blob/main/cikm_poster.pdf) and for more details, please check out our [paper](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=4912809)!
+This repo aims to facilitate reproducing tables in this paper. You can find the poster [here](https://github.com/githubjacky/auto-EPU/blob/main/cikm_poster.pdf) and for more details, please check out our [paper](https://dl.acm.org/doi/10.1145/3627673.3679877)!
 
 
 ## News
